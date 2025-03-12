@@ -7,7 +7,7 @@
 ## 導入方法
 
 ```bash
-bun add @freee/vibes
+bun add @freee_jp/vibes
 ```
 
 ## 主な特徴
