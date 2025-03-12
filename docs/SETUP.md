@@ -126,7 +126,7 @@ bun install
 bun start
 ```
 
-アプリケーションは http://localhost:3000 でアクセスできます。
+アプリケーションは <http://localhost:3000> でアクセスできます。
 
 ## ホットリロード
 
@@ -135,7 +135,7 @@ bun start
 ホットリロードが機能しているか確認するには:
 
 1. 開発サーバーを起動
-2. ブラウザで http://localhost:3000 を開く
+2. ブラウザで <http://localhost:3000> を開く
 3. ソースコード（例: `src/App.tsx`）を編集して保存
 4. ブラウザが自動的に更新されることを確認
 
@@ -163,12 +163,14 @@ PORT=3001 bun start
 Bunのバージョンに関する問題がある場合は、最新バージョンに更新してください:
 
 asdfの場合:
+
 ```bash
 asdf install bun latest
 asdf global bun latest
 ```
 
 npmの場合:
+
 ```bash
 npm install -g bun@latest
 ```
@@ -183,6 +185,6 @@ FAST_REFRESH=true bun start
 
 または、`.env.local`ファイルを作成して以下を追加:
 
-```
+```bash
 FAST_REFRESH=true
 ```

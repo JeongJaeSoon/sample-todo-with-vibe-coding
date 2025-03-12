@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+# Sample Todo with Vibe Coding
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React と TypeScript を使用した Todo アプリケーションのサンプルプロジェクトです。
 
-## Available Scripts
+## プロジェクト概要
 
-In the project directory, you can run:
+このプロジェクトは、モダンな Web 開発プラクティスを取り入れた Todo アプリケーションのサンプル実装です。ユーザーはタスクの追加、編集、削除、完了状態の切り替えなどの基本的な機能を利用できます。
 
-### `npm start`
+### 主要技術スタック
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **フロントエンド**: React, TypeScript
+- **状態管理**: React Context API
+- **スタイリング**: CSS Modules
+- **テスト**: Jest, React Testing Library
+- **ビルドツール**: Create React App
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 開発環境のセットアップ
 
-### `npm test`
+### 前提条件
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 以上)
+- bun (v1.0 以上)
 
-### `npm run build`
+### セットアップ手順
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. リポジトリのクローン
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone [リポジトリURL]
+   cd sample-todo-with-vibe-coding
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. 依存関係のインストール
 
-### `npm run eject`
+   ```bash
+   bun install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. 開発サーバーの起動
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   bun start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. ブラウザで <http://localhost:3000> にアクセスして動作確認
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 利用可能なスクリプト
 
-## Learn More
+- **開発サーバー起動**: `bun start`
+- **テスト実行**: `bun test`
+- **ビルド**: `bun run build`
+- **Lint**: `bun run lint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 開発ガイドライン
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+このプロジェクトでは、一貫性のある高品質なコードを維持するために、包括的な開発ガイドラインを採用しています。
+
+### ガイドラインの構成
+
+開発ガイドラインは `.clinerules` ファイルにインデックス化され、詳細は `.cline/rules/` ディレクトリ内の各ファイルに記載されています :
+
+- **コーディング規約**: 命名規則、フォーマット、TypeScript の使用法など
+- **TDD プラクティス**: テスト駆動開発の進め方
+- **コンポーネント設計**: Atomic Design パターンの適用方法
+- **状態管理**: 状態の種類と適切な管理方法
+- **エラーハンドリング**: エラーの処理と表示方法
+- **開発プロセス**: ブランチ戦略、PR プロセス、CI/CD など
+
+### Cline との協業
+
+このプロジェクトでは、AI アシスタント「Cline」を活用して開発効率を高めています。詳細は `.cline/rules/09-cline-collaboration.md` を参照してください。
+
+## ディレクトリ構造
+
+```bash
+/
+├── src/            # ソースコード
+│   ├── components/ # UI コンポーネント
+│   ├── hooks/      # カスタムフック
+│   ├── utils/      # ユーティリティ関数
+│   ├── api/        # API 関連コード
+│   └── store/      # 状態管理
+├── public/         # 静的ファイル
+├── docs/           # プロジェクト関連ドキュメント
+├── notes/          # 作業メモ（日付単位）
+└── .cline/         # Cline 関連ファイル
+    └── rules/      # 開発ガイドライン
+```
+
+## コントリビューション
+
+プロジェクトへの貢献を歓迎します。貢献する前に、以下のステップに従ってください :
+
+1. このリポジトリをフォークする
+2. 機能ブランチを作成する (`git checkout -b feature/amazing-feature`)
+3. 変更をコミットする (`git commit -m 'feat: add some amazing feature'`)
+4. ブランチにプッシュする (`git push origin feature/amazing-feature`)
+5. プルリクエストを作成する
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルを参照してください。
