@@ -2,6 +2,7 @@
   "name": "sample-todo-with-vibe-coding",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.4",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
