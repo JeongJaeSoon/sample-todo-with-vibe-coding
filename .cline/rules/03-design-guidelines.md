@@ -7,7 +7,7 @@
 ## 導入方法
 
 ```bash
-bun add @freee_jp/vibes
+pnpm add @freee_jp/vibes
 ```
 
 ## 主な特徴
@@ -23,8 +23,8 @@ vibesが使用できない場合は、styled-componentsを使用して実装し�
 
 ```bash
 # styled-componentsのインストール
-bun add styled-components
-bun add @types/styled-components -D
+pnpm add styled-components
+pnpm add -D @types/styled-components
 ```
 
 ## 注意点
