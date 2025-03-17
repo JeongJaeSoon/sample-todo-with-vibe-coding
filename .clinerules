@@ -57,3 +57,5 @@ src/
 └── utils/
     ├── formatter.ts
     └── formatter.test.ts
+
+cli/        # CLIモード用のスクリプト

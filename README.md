@@ -50,6 +50,7 @@ React と TypeScript を使用した Todo アプリケーションのサンプ�
 - **テスト実行**: `bun test`
 - **ビルド**: `bun run build`
 - **Lint**: `bun run lint`
+- **CLIモード実行**: `node cli/cli.mjs`
 
 ## 開発ガイドライン
 
@@ -83,6 +84,7 @@ React と TypeScript を使用した Todo アプリケーションのサンプ�
 ├── public/         # 静的ファイル
 ├── docs/           # プロジェクト関連ドキュメント
 ├── notes/          # 作業メモ（日付単位）
+├── cli/            # CLIモード用のスクリプト
 └── .cline/         # Cline 関連ファイル
     └── rules/      # 開発ガイドライン
 ```
