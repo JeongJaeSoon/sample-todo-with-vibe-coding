@@ -1,0 +1,61 @@
+# プロジェクト開発ガイドライン
+
+このファイルはプロジェクトの開発ガイドラインの概要を定義します。詳細な内容は各ガイドラインファイルを参照してください。
+
+## 開発プロセス
+
+[開発プロセスガイド](.cline/rules/01-development-process.md)に従って開発を進めてください。このガイドには以下の内容が含まれています :
+
+- 基本原則
+- 重要なコマンド
+- 作業順序
+- TDD実践方法
+- 作業の進め方
+- ドキュメント構成
+- コミットメッセージ規約
+
+## コーディングスタンダード
+
+[コーディングスタンダード](.cline/rules/02-coding-standards.md)に従ってコードを作成してください。このガイドには以下の内容が含まれています :
+
+- 命名規則
+- フォーマット
+- TypeScript
+- React
+- スタイリング
+- Lint
+- コンポーネント設計
+- 状態管理の方針
+- エラーハンドリング
+
+## デザインガイドライン
+
+[デザインガイドライン](.cline/rules/03-design-guidelines.md)に従ってUIを実装してください。このガイドには以下の内容が含まれています :
+
+- vibesデザインシステム
+- 代替手段 : styled-components
+- 注意点
+
+## ディレクトリ構造
+
+```
+src/
+├── api/
+│   ├── userApi.ts
+│   └── userApi.test.ts
+├── components/
+│   ├── Button/
+│   │   ├── Button.tsx
+│   │   ├── Button.test.tsx
+│   │   └── Button.styles.ts
+│   └── Card/
+│       ├── Card.tsx
+│       └── Card.test.tsx
+├── hooks/
+│   ├── useForm.ts
+│   └── useForm.test.ts
+└── utils/
+    ├── formatter.ts
+    └── formatter.test.ts
+
+cli/        # CLIモード用のスクリプト
