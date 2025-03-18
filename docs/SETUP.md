@@ -13,7 +13,7 @@
 
 ## 概要
 
-このプロジェクトは React と TypeScript を使用しており、Bun をパッケージマネージャーおよび開発サーバーとして使用しています。開発環境をセットアップするには、以下のいずれかの方法を選択してください。
+このプロジェクトは React と TypeScript を使用しており、pnpm をパッケージマネージャーおよび開発サーバーとして使用しています。開発環境をセットアップするには、以下のいずれかの方法を選択してください。
 
 ## asdfを使用したセットアップ
 
@@ -45,28 +45,24 @@ echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
 source ~/.zshrc
 ```
 
-### 3. Bunプラグインのインストール
+### 3. pnpmのインストール
 
 ```bash
-asdf plugin add bun
-```
-
-### 4. Bunのインストール
-
-```bash
-asdf install bun latest
-asdf global bun latest
+asdf install
+corepack enable
+corepack prepare pnpm@9.15.4 --activate
+asdf reshim
 ```
 
 バージョンを確認:
 
 ```bash
-bun --version
+pnpm --version
 ```
 
 ## nvmを使用したセットアップ
 
-[nvm](https://github.com/nvm-sh/nvm) は Node.js のバージョン管理ツールです。Bunをインストールするために、まずNode.jsをインストールします。
+[nvm](https://github.com/nvm-sh/nvm) は Node.js のバージョン管理ツールです。pnpmをインストールするために、まずNode.jsをインストールします。
 
 ### 1. nvmのインストール
 
@@ -89,18 +85,18 @@ nvm install node  # 最新版
 # nvm install 18.18.0
 ```
 
-### 3. Bunのインストール
+### 3. pnpmのインストール
 
-npmを使用してBunをグローバルにインストール:
+npmを使用してpnpmをグローバルにインストール:
 
 ```bash
-npm install -g bun
+npm install -g pnpm
 ```
 
 バージョンを確認:
 
 ```bash
-bun --version
+pnpm --version
 ```
 
 ## プロジェクトのセットアップ
@@ -115,7 +111,7 @@ cd <プロジェクト名>
 ### 2. 依存関係のインストール
 
 ```bash
-bun install
+pnpm install
 ```
 
 ## 開発サーバーの起動
@@ -123,7 +119,7 @@ bun install
 以下のコマンドで開発サーバーを起動します:
 
 ```bash
-bun start
+pnpm start
 ```
 
 アプリケーションは <http://localhost:3000> でアクセスできます。
@@ -147,7 +143,7 @@ bun start
 
 ```bash
 rm -rf node_modules
-bun install
+pnpm install
 ```
 
 ### ポートの競合
@@ -155,24 +151,24 @@ bun install
 ポート3000が既に使用されている場合は、環境変数PORTを設定して別のポートを使用できます:
 
 ```bash
-PORT=3001 bun start
+PORT=3001 pnpm start
 ```
 
-### Bunのバージョンの問題
+### pnpmのバージョンの問題
 
-Bunのバージョンに関する問題がある場合は、最新バージョンに更新してください:
+pnpmのバージョンに関する問題がある場合は、最新バージョンに更新してください:
 
 asdfの場合:
 
 ```bash
-asdf install bun latest
-asdf global bun latest
+asdf install pnpm latest
+asdf global pnpm latest
 ```
 
 npmの場合:
 
 ```bash
-npm install -g bun@latest
+npm install -g pnpm@latest
 ```
 
 ### パフォーマンスの最適化
@@ -180,7 +176,7 @@ npm install -g bun@latest
 ホットリロードのパフォーマンスを向上させるには、以下の環境変数を設定できます:
 
 ```bash
-FAST_REFRESH=true bun start
+FAST_REFRESH=true pnpm start
 ```
 
 または、`.env.local`ファイルを作成して以下を追加:
