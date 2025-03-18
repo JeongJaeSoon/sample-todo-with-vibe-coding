@@ -45,7 +45,7 @@ echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
 source ~/.zshrc
 ```
 
-### 3. pnpmのインストール
+### 3. asdfでpnpmのインストール
 
 ```bash
 asdf install
@@ -85,7 +85,7 @@ nvm install node  # 最新版
 # nvm install 18.18.0
 ```
 
-### 3. pnpmのインストール
+### 3. nvmでpnpmのインストール
 
 npmを使用してpnpmをグローバルにインストール:
 
